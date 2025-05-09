@@ -1,0 +1,195 @@
+/*
+div{
+  padding: 20px;
+  text-align: center;
+  border: solid 2px black;
+}
+*/
+#header{
+  padding: 20px;
+  text-align: center;
+  border: solid 2px black;
+  background-color:#f26e8f;
+}
+#nav{
+
+  padding: 5px;
+  text-align: center;
+  border: solid 2px black;
+  background-color:white;
+}
+
+.container{
+  display:flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.panel{
+  flex:1;
+  text-align: center;
+  border: solid 2px black;
+  min-height:500px;
+  background-color:#9d36ba;
+}
+#centerpanel{
+  flex:3;
+  text-align: center;
+  border: solid 2px black;
+  min-height:500px;
+  background-color:Plum;
+}
+
+#foot{
+  flex: 1;
+  border: solid 2px black;
+  background-color:grey;
+  height: 200px;
+}
+#foot h3{
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+}
+#foot img{
+  flex: 1;
+  width:50px;
+  height: 50px;
+}
+.card{
+  width:350px;
+  height:200px;
+  margin:1px;
+  padding:30px;
+  border:1px solid black;
+  text-align:center;
+  background-image: linear-gradient(to right, #3fe48f , #4fab72); 
+   border-radius: 25px;
+
+}
+/* target all h4 elements*/
+h4{
+  color:black;
+}
+/*target all the paragraphs in the card class*/
+.card p{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card div{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:15px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card di2{
+  font-size:17px;
+  color: black;
+  font-family:verdana;
+  font-style:italic;
+}
+.card img{
+  width:100px;
+  height:100px;
+  transition: transform .2s;
+}
+.card img:hover{
+  transform: scale(1.5);
+}
+.flip-card {
+   border-radius: 25px;
+  background-color: transparent;
+  width: 300px;
+  height: 210px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: linear-gradient(to right, #6acae2 , #5094a5);
+  color: black;
+   border-radius: 25px;
+}
+
+/* Style the back side */
+.flip-card-back {
+   border-radius: 25px;
+  background-image: linear-gradient(to right, #6acae2 , #5094a5);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+#im1 img {
+  position: absolute;
+  width:125px;
+  height:122px;
+  left: 10px;
+  top: 135px;
+}
+
+.button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 5px #999;
+}
+.button:active {
+  background-color: #525151;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.button:hover{
+  background-color:grey;
+}
+.link-style:link, .link-style:visited {
+  background-color: black;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  font-size: 12px;
+  width:35px;
+  height:30px;
+  text-decoration: none;
+  display: inline-block;
+}
+.link-style:hover{
+  background-color:grey;
+}
